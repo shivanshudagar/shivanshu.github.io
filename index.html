@@ -1,39 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');     
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
-      </style>
-</head>    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Page </title>
+</head>
+
 <body>
-<div class="wrapper">
-  <h1>HINTS</h1>
-
-  <div class="container">
-    <div class="box">
- <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, odio cupiditate. Corporis iste enim perspiciatis dolore. Expedita molestias deserunt iure beatae sed ipsa ullam totam velit quod? Iusto, veritatis voluptatum?</p>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="Login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="Register()">Register</button>
+            </div>
+            <div class="social-icons">
+                <img src="fb.png">
+                <img src="tw.png">
+                <img src="gp.png">
+            </div>
+            <form id="Login" class="input-group">
+                <input type="text" class="input-feild" placeholder="User ID" required>
+                <input type="text" class="input-feild" placeholder="Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+            <form id="Register" class="input-group">
+                <input type="text" class="input-feild" placeholder="User ID" required>
+                <input type="email" class="input-feild" placeholder="Email ID" required>
+                <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
     </div>
-  </div>
-</div> 
-<div class="wrapper">
-<div class="container-1">
-  <div class="box-1">
-<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque at eos saepe quis aliquam quibusdam mollitia nesciunt, unde dolore, cupiditate beatae placeat reprehenderit distinctio similique! Dolor odit esse fuga itaque.</p>
-  </div>
-</div>
-</div>
-</div>
+<script>
+    var x = document.getElementById("Login");
+    var y = document.getElementById("Register");
+    var z = document.getElementById("btn");
 
-<div class="wrapper">
-<div class="container-2">
-  <div class="box-2">
-<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, odit hic! Fugit perspiciatis mollitia fugiat, quasi laborum, enim tempore et, rerum nesciunt nam recusandae ad iure sint est odio explicabo.</p>
-  </div>
-</div>
-</div>
-</div>
+    function Register(){
+        x.style.left = "-450px";
+        y.style.left = "50px";
+        z.style.left = "110px"
+    }
+
+</script>
 </body>
+
 </html>
